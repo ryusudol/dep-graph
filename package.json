@@ -1,6 +1,13 @@
 {
+  "scripts": {
+    "fetch": "bun src/index.ts",
+    "graph": "bun src/build-graph.ts",
+    "build": "bun run fetch && bun run graph"
+  },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.2.87",
+    "@composio/core": "^0.6.11",
+    "d3": "^7.9.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
